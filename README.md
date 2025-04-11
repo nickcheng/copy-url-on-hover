@@ -1,3 +1,9 @@
+Changes from Nick:
+
+- Z to copy the link. Because the key stays close to X, and can be easily handled by my left hand. ;)
+- Migrate to menifest version 3 to satisfy Google. :shrug:
+- Added missing query string and fragments to the copied link.
+
 # Copy URL on Hover
 This is an extension for both chromium-based and firefox-based browsers, so you can hover over a link and hit Y to copy (yank) the link address *like a real vim user* - or hit X to copy the link text! For feedback, a pop sound will be played after copying.
 

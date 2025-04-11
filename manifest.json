@@ -1,19 +1,28 @@
 {
-    "manifest_version": 2,
-    "name": "Copy URL on Hover",
-    "version": "0.8.0",
-    "description": "Hover over a link and hit Y to copy (yank) the link address - or hit X to copy the link text! For feedback, a pop sound will be played after copying.",
-    "content_scripts": [
-        {
-        "matches": ["<all_urls>"],
-        "js": ["jquery-3.6.0.min.js", "copylinkaddress.js"]
-        }
-    ],
-    "icons": {
-            "48": "/icons/icon48.png",
-            "128": "/icons/icon128.png"
-    },
-    	"web_accessible_resources": [
-		"sounds/pop.mp3"
-	]
+  "manifest_version": 3,
+  "name": "Copy URL on Hover",
+  "version": "0.9.0",
+  "description": "Hover over a link and hit Z to copy (yank) the link address - or hit X to copy the link text! For feedback, a pop sound will be played after copying.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery-3.6.0.min.js", "copylinkaddress.js"]
+    }
+  ],
+  "icons": {
+    "48": "/icons/icon48.png",
+    "128": "/icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["sounds/pop.mp3"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "48": "/icons/icon48.png",
+      "128": "/icons/icon128.png"
+    }
+  }
 }
